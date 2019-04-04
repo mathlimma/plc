@@ -298,4 +298,20 @@ myFilter [] = []
 myFilter (a:as)
     | a>0 = a : myFilter as
     | otherwise = myFilter as
-    
+
+{-Função que, dada uma lista de listas de inteiros, devolve uma lista
+contendo o maior elemento de cada sub-lista da entrada-}
+maiores :: [[Int]] -> [Int]
+maiores [] = []
+maiores (a:as) = maiorList a : maiores as
+
+maiorList :: [Int] -> Int
+maiorList [] = maxBound :: Int
+maiorList [x] = x
+maiorList (a:as)
+    | a > maiorList as = a
+    | otherwise = maiorList as
+
+( . ) f g x = f ( g x ) == f g = \x−> f ( g x )
+
+
