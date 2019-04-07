@@ -312,6 +312,17 @@ maiorList (a:as)
     | a > maiorList as = a
     | otherwise = maiorList as
 
-( . ) f g x = f ( g x ) == f g = \x−> f ( g x )
+-- EXERCÍCIOS DE TIPOS ALGEBRICOS
+
+--showExpr:: Expr -> String
+--toList :: List t -> [t]
+--fromList :: [t] -> List t
+--depth :: Tree t -> Int
+--collapse :: Tree t -> [t]
+--mapTree :: (t -> u) -> Tree t -> Tree u
+
+
+
+
 
 
